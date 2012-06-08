@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="spanish"/>
+        <meta name="author" content="Flowcode"/>
+        <title>Fancy Timeline - Example</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <link rel="stylesheet" type="text/css" href="css/global.css"></link>
+
+        <!-- jquery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+        <!-- fancy-timeline -->
+		<script type="text/javascript" src="js/fancy-timeline.js"></script>
+		<link type="text/css" href="css/ftl-default/fancy-timeline.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        
+        <!-- header -->
+        <div id="header">
+            <div id="header-content">
+				<span>Example</span>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div id="content">
+            <div id="container">
+				<div class="timeline-container"></div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <div id="footer-content">
+				By Flowcode
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+		var dates = [
+			{
+				"marker": "1986", 
+				"type": "default",
+				"title": "Master of Puppets" ,
+				"content": "Metallica's third studio album, Master of Puppets, was recorded at Sweet Silence Studios and was released in March 1986. The album reached number 29 on the Billboard 200, and spent 72 weeks on the chart.[23] The album was the band's first to be certified gold on November 4, 1986, and was certified six times platinum in 2003.[24] Steve Huey of Allmusic considered the album \"the band's greatest achievement\".[25] Following the release of the album, Metallica supported Ozzy Osbourne for a United States tour.[21] Hetfield broke his wrist skateboarding down a hill and continued the tour performing vocals, with guitar technician John Marshall playing rhythm guitar.[26]"
+			},
+			{
+				"marker": "1991", 
+				"type": "default",
+				"title": "Ten" ,
+				"content": "With the success of Ten, Pearl Jam became a key member of the Seattle grunge explosion, along with Alice in Chains, Nirvana, and Soundgarden. The band was criticized in the music press; British music magazine NME said that Pearl Jam was \"trying to steal money from young alternative kids' pockets.\"[26] Nirvana's Kurt Cobain angrily attacked Pearl Jam, claiming the band were commercial sellouts,[27] and argued Ten was not a true alternative album because it had so many prominent guitar leads.[19] Cobain later reconciled with Vedder, and they reportedly were on amicable terms before Cobain's death in 1994.[2]"
+			},
+			{
+				"marker": "1994", 
+				"type": "default",
+				"title": "5 de Abril" ,
+				"content": "<p>El 23 de febrero 1994 Kurt Cobain hizo su última aparición en televisión en un programa de la televisión italiana, Tunnel, de Serena Dandini.</p><p>El 1 de marzo de 1994, después de un concierto en el Terminal Einz, en Múnich, Alemania, a Cobain se le diagnosticó bronquitis y laringitis severas. Al día siguiente fue a Roma para tratamiento médico. Su esposa estaría allí el 3 de marzo.</p>"
+			},
+		];
+    
+        $(".timeline-container").fancyTimeline({
+        	initPos: 0,
+        	data: dates
+        });
+    });
+</script>
+

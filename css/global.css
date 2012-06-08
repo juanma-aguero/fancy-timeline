@@ -1,0 +1,285 @@
+/*
+ * Fonts
+*/
+@font-face {
+    font-family: 'HoosickFallsRegular';
+    src: url('../fonts/4955-webfont.eot');
+    src: url('../fonts/4955-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/4955-webfont.woff') format('woff'),
+        url('../fonts/4955-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+ *   Page structure
+*/
+body{
+    margin: 0px;
+    font-family: Arial;
+    font-size: 14px;
+}
+div{
+    /*    border: 1px solid grey;*/
+}
+
+#header{
+    height: 104px;
+}
+
+#content{ 
+    background-color: white;
+    margin: auto;
+    width: 990px;
+    color: #666;
+    min-height: 300px;
+    display: table;
+}
+
+#footer{
+    height: 39px;
+}
+
+
+
+/**
+ * header.
+*/
+#header-content{
+    border-top: 6px black solid;
+    display: table;
+    width: 990px;
+    margin: auto;
+}
+#main-logo{
+    height: 104px;
+    float: left;
+    width: 200px;
+}
+#main-menu-container{
+    margin-top: 10px;
+    float: right;
+    height: 50px; 
+    width: 740px;
+}
+#main-menu{
+    color: grey;
+}
+#main-menu li{
+    display: inline;
+    margin-right: 15px;
+}
+#main-menu li a{
+    color: black;
+    text-decoration: none;
+    font-family: "HoosickFallsRegular";
+    font-size:15px;
+}
+#main-menu li a:hover{
+    border-bottom: 2px solid #e7e7e7;
+}
+#social-links{
+    line-height: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+    float: right;
+    width: 70px;
+    height: 20px;
+}
+#social-links a{
+    width: 18px;
+    margin-left: auto;
+    cursor: pointer;
+}
+#social-links a img{
+    width: 18px;
+    height: 18px;
+}
+
+/*
+ * Footer
+*/
+#footer-content{
+    width: 990px;
+    margin: auto;
+    height: 39px;
+    border-bottom: 6px black solid;
+
+}
+
+/**
+ * Banners
+*/
+.box-banner-flash{
+    width: 100%;
+    height: 150px;
+    background-color: #e2cab2;
+}
+.box-banner-png{
+    margin-top: 15px;
+    width: 100%;
+    height: 120px;
+    background-color: #00a0a0;
+}
+.box-banner-flash img{
+    margin-left: 80px;
+}
+.box-banner-png img{
+    float: left;
+    margin-left: 50px;
+}
+#box-banner-social{
+    width: 294px;
+    height: 68px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 35px;
+    background-color: white;
+}
+#box-banner-follow{
+    margin-top: 10px;
+    margin-right: 150px;
+    display: block;
+    float: right;
+    color: white;
+    font-size: 16px;
+}
+#box-banner-social img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/*
+ * Slots
+*/
+.slot-container{
+    width: 600px;
+    display: table;
+    margin-top: 17px;
+    margin-left: 50px;
+    float: left;
+}
+.slot{
+    float: left;
+    width: 275px;
+    margin-right: 25px;
+    margin-bottom: 18px;
+}
+.slot-header{
+    height: 25px;
+    line-height: 25px;
+    background-color: #e7e7e7;
+}
+.slot-header-span{
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #00a0a0;
+    color: white;
+    font-family: "HoosickFallsRegular";
+    font-size: 21px;
+}
+.slot-content{
+    margin-top: 5px;
+    height: 125px;
+    overflow: hidden;
+}
+.area-academica{
+    background-image: url('../images/slot-area-academica.jpg');
+}
+.publicaciones{
+    background-image: url('../images/slot-publicaciones.jpg');
+}
+.biblioteca{
+    background-image: url('../images/slot-biblioteca.jpg');
+}
+.institucional{
+    background-image: url('../images/slot-institucional.jpg');
+}
+.actividades{
+    background-image: url('../images/slot-actividades.jpg');
+}
+.programa-educativo{
+    background-image: url('../images/slot-programa-educativo.jpg');
+}
+.slot-caption{
+    height: 55px;
+    border-right: 2px #e7e7e7 solid;
+    border-bottom: 2px #e7e7e7 solid;
+    color: #333;
+}
+.ver-mas{
+    font-family: "HoosickFallsRegular";
+    float: right;
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 17px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.slot-content-slide{
+    color: white;
+    font-weight: bolder;
+    bottom: 125px;
+    position: relative;
+    z-index: 4;
+    background-color:#00a0a0;
+    opacity: 0.7;
+    height: 125px;
+    cursor: pointer;
+}
+.slot-content-slide span{
+    float: left;
+    display: block;
+    margin: 4px;
+}
+
+
+/*
+ * Insitucional
+*/
+.container{
+    margin-left: 80px;
+    width: 800px;
+}
+.pagina-seccion{
+    margin-top: 15px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #e7e7e7;
+}
+.pagina-seccion span{
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #00a0a0;
+    color: white;
+    font-family: "HoosickFallsRegular";
+    font-size: 21px;
+}
+
+.titulo{
+    height: 35px;
+    line-height: 35px;
+    font-family: "HoosickFallsRegular";
+    color: #00a0a0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto{
+    background-color: #e7e7e7;
+}
+.texto p{
+    color: black;
+    padding: 5px;
+}
+
+/**
+    Facebook
+*/
+.fb-like-box{
+    margin-top: 15px;
+    float: right;
+    margin-right: 35px;
+}

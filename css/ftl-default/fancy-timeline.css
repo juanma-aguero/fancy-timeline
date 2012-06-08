@@ -1,0 +1,177 @@
+/*******************
+ *  Main Structure *
+ ******************/
+.timeline-container{
+    width: 990px;
+    height: 500px;
+    margin-top: 50px;
+    z-index: 0;
+}
+.timeline{
+    background-color: whitesmoke;
+    background-image: url('images/timeline-bg.jpg');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 990px;
+    height: 500px;
+    margin: auto; 
+    font-family: sans-serif;
+    z-index: 0;
+}
+
+#timeline-slider{
+    position: relative;
+    left: 0px;
+    width: 5000px;
+    display: table;
+    margin-top: 100px;
+    height: 300px;
+    z-index: 0;
+}
+#timeline-dates-line{
+    width: 100%;
+    height: 3px;
+    top: 10px;
+    background-color: #666;
+    position: relative;
+    opacity: 0.9;
+    box-shadow: 0px -2px 5px #333;
+    z-index: 0;
+}
+
+/*********************************
+   General Timeline Items
+**********************************/
+.timeline-item{
+    float: left;
+    margin-left: 20px;
+    border: 1px solid #666;
+    box-shadow: 1px 4px 5px #333;
+    border-radius: 15px;
+}
+.timeline-item-content{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 8px;
+}
+.timeline-item-content-img-cont{
+    width: 100%;
+    height: 92%;
+    overflow: hidden;
+}
+
+
+/* item default */
+.item-default{
+    height: 250px;
+    width: 320px;
+    background-color: beige;
+    font-family: sans-serif;
+    font-size: 85%;
+    opacity: 0.9;
+}
+.item-default.active {
+    width: 350px !important;
+    height: 290px !important;
+}
+
+.item-default .title{
+	display: block;
+	font-weight: bold;
+    color: darkcyan;
+    font-size: 16px;
+    font: Arial;
+}
+
+
+/*********************************
+   Dates
+**********************************/
+#timeline-dates{
+    height: 50px;
+    line-height: 20px;
+    position: relative;
+    z-index: 1;
+}
+.date-container{
+    float: left;
+    display: table;
+    height: 50px;
+    color: black;
+    font-size: 10px;
+}
+#timeline-dates li:hover{
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+.pointer-date{
+    float: left;
+    height: 20px;
+    width: 6px;
+    border-left: 2px solid black;
+}
+.pointer-date-separator{
+    float: left;
+    height: 16px;
+    width: 6px;
+    border-left: 1px solid black;
+}
+.date{
+    float: left;
+    width: 20px;
+    margin-left: -10px;
+    cursor: pointer;
+    font-size: 10px;
+}
+.date-focus{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/***************************************/
+.arrow{
+    position: relative;
+    width: 60px;
+    opacity: 0.4;
+    z-index: 5;
+    height: 100%;
+    line-height: 100%;
+}
+.arrow span{
+	display: block;
+    margin-top: 200px;
+    font-size: 50px;
+    color: black;
+}
+.arrow:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+#backward.arrow{
+    background-image: url('images/arrow-left-bg.png');
+    background-repeat: repeat-y;
+    top: -91%;
+}
+#backward.arrow span{
+	margin-right: 5px;
+	float: right;
+}
+#forward.arrow{
+    background-image: url('images/arrow-right-bg.png');
+    background-repeat: repeat-y;
+    left: 930px;
+    top: -191%;
+}
+#forward.arrow span{
+	margin-left: 5px;
+	float: left;
+}
+#middle{
+	height: 1px;
+    width: 1px;
+    margin: auto;
+    color: white;
+}
