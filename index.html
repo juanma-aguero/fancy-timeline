@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Fancy Timeline by juanma-aguero</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Fancy Timeline</h1>
+        <h2>Html5 + Javascript general porpouse timeline</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/juanma-aguero/fancy-timeline/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/juanma-aguero/fancy-timeline/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/juanma-aguero/fancy-timeline" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h2>Howto</h2>
+
+<ul>
+<li>
+<p>First, include in your html the javascript and css links to the file provided:</p>
+
+<pre><code>&lt;script type="text/javascript" src="js/fancy-timeline.js"&gt;&lt;/script&gt;
+&lt;link type="text/css" href="css/ftl-default/fancy-timeline.css" rel="stylesheet" /&gt;
+</code></pre>
+</li>
+<li>
+<p>Then you need to generate some data like this:</p>
+
+<pre><code>var dates = [
+  {
+  "marker": "marker1", 
+  "type": "default",
+  "title": "title 1" ,
+  "content": "Here is the content 1"
+  },
+  {
+  "marker": "marker2", 
+  "type": "default",
+  "title": "title 1" ,
+  "content": "Here is the content 2"
+  }
+];
+</code></pre>
+</li>
+<li>
+<p>Then, select with jquery:</p>
+
+<pre><code>$(".timeline-container").fancyTimeline({
+  initPos: 0,
+    data: dates
+});
+</code></pre>
+</li>
+</ul><h2>Examples</h2>
+
+<p>Here is a small live example:<a href="http://flowcode.com.ar/fancy-timeline/examples/default/">example</a>.</p>
+
+<h2>Author</h2>
+
+<p>Juan Manuel Agüero: <a href="http://juanmaaguero.com.ar/">about &amp; contact</a>.</p>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-32568469-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
