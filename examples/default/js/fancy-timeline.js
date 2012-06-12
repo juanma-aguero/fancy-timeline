@@ -1,5 +1,5 @@
 /*!
- *	Fancy-TimeLine V0.1.0
+ *	Fancy-TimeLine vALPHA.1.0
  *	
  *	Copyright (C) 2012 Juan Manuel Aguero (http://juanmaaguero.com.ar/sobre-mi)
  *	
