@@ -11,7 +11,7 @@
     background-color: whitesmoke;
     background-image: url('images/timeline-bg.jpg');
     background-size: cover;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     width: 990px;
     height: 500px;
@@ -112,7 +112,9 @@
     height: 20px;
     width: 6px;
     border-left: 2px solid black;
+	position: relative;
 }
+
 .pointer-date-separator{
     float: left;
     height: 16px;
@@ -172,6 +174,7 @@
 #middle{
     height: 1px;
     width: 1px;
-    margin: auto;
-    color: white;
+    /*margin: auto;*/
+	position: absolute;
+    color: yellow;
 }

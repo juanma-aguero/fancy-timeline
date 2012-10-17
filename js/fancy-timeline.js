@@ -200,6 +200,6 @@
 	
         // Initial position
         methods.sliderTo(initPos);
-        
+       
     };  
 })(jQuery);
