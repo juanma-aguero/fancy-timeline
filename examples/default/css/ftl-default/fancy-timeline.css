@@ -11,7 +11,7 @@
     background-color: whitesmoke;
     background-image: url('images/timeline-bg.jpg');
     background-size: cover;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     width: 990px;
     height: 500px;
@@ -68,7 +68,7 @@
     height: 250px;
     width: 320px;
     background-color: beige;
-    font-family: sans-serif;
+    font-family: "Times";
     font-size: 85%;
     opacity: 0.9;
 }
@@ -78,11 +78,64 @@
 }
 
 .item-default .title{
-	display: block;
-	font-weight: bold;
+    display: block;
+    font-weight: bold;
     color: darkcyan;
     font-size: 16px;
     font: Arial;
+}
+/* item youtube video */
+.item-youtube-video{
+    height: 250px;
+    width: 320px;
+    background-color: black;
+    font-family: "Times";
+    font-size: 85%;
+    opacity: 0.9;
+}
+.item-youtube-video.active {
+    width: 350px !important;
+    height: 290px !important;
+}
+
+.item-youtube-video .title{
+    display: block;
+    font-family: Arial;
+    font-weight: bold;
+    color: darkcyan;
+    font-size: 16px;
+}
+.item-youtube-video iframe{
+    width: 100%;
+}
+
+/* item image */
+.item-image{
+    height: 250px;
+    width: 320px;
+    background-color: black;
+    font-family: "Times";
+    font-size: 85%;
+    opacity: 0.9;
+}
+.item-image.active {
+    width: 350px !important;
+    height: 290px !important;
+}
+
+.item-image .title{
+    display: block;
+    font-family: Arial;
+    font-weight: bold;
+    color: darkcyan;
+    font-size: 16px;
+}
+.item-image img{
+    max-width: 90%;
+    max-height: 70%;
+}
+.item-image .timeline-item-content{
+    text-align: center;
 }
 
 
@@ -112,7 +165,9 @@
     height: 20px;
     width: 6px;
     border-left: 2px solid black;
+    position: relative;
 }
+
 .pointer-date-separator{
     float: left;
     height: 16px;
@@ -141,7 +196,7 @@
     line-height: 100%;
 }
 .arrow span{
-	display: block;
+    display: block;
     margin-top: 200px;
     font-size: 50px;
     color: black;
@@ -156,8 +211,8 @@
     top: -91%;
 }
 #backward.arrow span{
-	margin-right: 5px;
-	float: right;
+    margin-right: 5px;
+    float: right;
 }
 #forward.arrow{
     background-image: url('images/arrow-right-bg.png');
@@ -166,12 +221,13 @@
     top: -191%;
 }
 #forward.arrow span{
-	margin-left: 5px;
-	float: left;
+    margin-left: 5px;
+    float: left;
 }
 #middle{
-	height: 1px;
+    height: 1px;
     width: 1px;
-    margin: auto;
-    color: white;
+    /*margin: auto;*/
+    position: absolute;
+    color: yellow;
 }

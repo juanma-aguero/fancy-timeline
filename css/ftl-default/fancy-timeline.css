@@ -78,8 +78,8 @@
 }
 
 .item-default .title{
-	display: block;
-	font-weight: bold;
+    display: block;
+    font-weight: bold;
     color: darkcyan;
     font-size: 16px;
     font: Arial;
@@ -141,7 +141,7 @@
     line-height: 100%;
 }
 .arrow span{
-	display: block;
+    display: block;
     margin-top: 200px;
     font-size: 50px;
     color: black;
@@ -156,8 +156,8 @@
     top: -91%;
 }
 #backward.arrow span{
-	margin-right: 5px;
-	float: right;
+    margin-right: 5px;
+    float: right;
 }
 #forward.arrow{
     background-image: url('images/arrow-right-bg.png');
@@ -166,11 +166,11 @@
     top: -191%;
 }
 #forward.arrow span{
-	margin-left: 5px;
-	float: left;
+    margin-left: 5px;
+    float: left;
 }
 #middle{
-	height: 1px;
+    height: 1px;
     width: 1px;
     margin: auto;
     color: white;
