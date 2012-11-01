@@ -49,7 +49,7 @@
         var methods = {
             positionTo: function(id){
                 // get new position
-                var middle = (window.innerWidth/2);
+                var middle = ($(window).width()/2);
                 var dateOffset = $("#pointer-date-"+ id).offset();
 				
                 var diff = (dateOffset.left - middle);
