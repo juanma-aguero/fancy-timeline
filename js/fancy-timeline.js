@@ -1,5 +1,5 @@
 /*!
- *	Fancy-TimeLine vALPHA.2.1
+ *	Fancy-TimeLine v.1.0
  *	
  *	Copyright (C) 2012 Juan Manuel Aguero (http://juanmaaguero.com.ar/sobre-mi)
  *	
@@ -78,7 +78,7 @@
                 $('.date-focus').toggleClass("date-focus", 100);
 				
                 // get new position
-                var middle = (window.innerWidth/2);
+                var middle = ($(window).width()/2);
                 var dateOffset = $("#date-"+ id).offset();
 				
                 var diff = (dateOffset.left - middle);
@@ -130,7 +130,7 @@
         var dataObjs = params.data;
 		
         maxPos = dataObjs.length-1;
-        $("#middle").css("left", (window.innerWidth/2)-($("#timeline").offset().left));
+        $("#middle").css("left", ($(window).width()/2)-($("#timeline").offset().left));
         // Slider width calc
         var sliderLength = ((marginLeft + itemWidth) * (dataObjs.length+1));
         $("#timeline-slider").css("width", sliderLength);
