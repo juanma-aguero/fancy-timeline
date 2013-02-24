@@ -15,4 +15,4 @@ Here is a small live example:[example](http://flowcode.com.ar/fancy-timeline/exa
 * more themes!
 
 ## Author
-Juan Manuel Aguero: [blog](http://juanmaaguero.com.ar/).
+Juan Manuel Aguero: [web](http://juanmaaguero.com.ar/).
