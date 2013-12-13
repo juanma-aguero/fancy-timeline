@@ -7,7 +7,7 @@ Html + Javascript general porpouse timeline
 Light documentation:[wiki](https://github.com/juanma-aguero/fancy-timeline/wiki/How-to).
 
 ## Examples
-Here is a small live example:[example](http://flowcode.com.ar/fancy-timeline/examples/default/).
+Here is a small live example:[example](http://flowcode.com.ar/fancy-timeline/examples/default/index.html).
 
 ## Upcoming features
 * native video support
